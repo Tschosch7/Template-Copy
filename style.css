@@ -81,6 +81,8 @@ img {
     max-width: 520px;
 }
 
+
+
 /*
 
 NAVIGATION BAR
@@ -337,12 +339,22 @@ QUALITY WORK
 
 .work__img--wrapper {
     width: 50%;
+    position: relative;
+    border: 1px solid rgba(160, 174, 192, 0.548);
+    border-radius: 4px;
+    background-color: white;
 }
 
 .work__img {
     width: 100%;
-    border: 1px solid rgba(160, 174, 192, 0.548);
-    border-radius: 4px;
+}
+
+.dot-grid {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transform: translate(50%, 50%);
+    z-index: -1;
 }
 
 /*
@@ -353,17 +365,80 @@ STEPS
 
 .steps__row {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
 }
 
 .steps__img--wrapper {
     width: 50%;
     align-items: center;
+    justify-content: center;
+    position: relative;
 }
 
 .steps__img {
     width: 100%;
 }
+
+.steps__dot-grid {
+    position: absolute;
+    opacity: 0.15;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 57%);
+    z-index: -10;
+}
+
+.steps__box {
+    display: flex;
+    flex-direction: column;
+    padding: 32px 0;
+    margin-left: 64px;
+}
+
+.steps {
+    margin-top: 48px;
+}
+
+.step {
+    display: flex;
+    margin-top: 32px;
+}
+
+.step:first-child {
+    margin: 0;
+}
+
+.step__number {
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 36px;
+    color: rgb(203, 213, 224)
+}
+
+.step__description {
+    color: rgb(36, 62, 99);
+    line-height: 24px;
+    margin-left:24px;
+    text-align: left;
+}
+
+.step__headline {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 20px;
+}
+
+.step__para {
+    margin-top: 12px;
+    line-height: 28px;
+    font-size: 14px;
+    font-weight: 500;
+    color: rgb(113, 128, 150);
+    max-width: 320px;
+}
+
+
+
 
 /*
 
@@ -412,7 +487,6 @@ VALUES
 .links {
     border-bottom: 1px solid rgba(160, 174, 192, 0.548);
 }
-
 
 
 
